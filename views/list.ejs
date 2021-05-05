@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Share App</title>
+
+</head>
+<body>
+    <% memberList.forEach(member => { %>
+        
+    <% }) %>
+    <h1> Member List </h1>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">email</th>
+            <th scope="col">password</th>
+            <th scope="col">phoneNumber</th>
+            <th scope="col">communityName</th>
+            <th scope="col">required</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% memberList.forEach(member => { %>
+                <tr>
+                  <th scope="row"><%= member.email %></th>
+                  <td><%= member.password %></td>
+                  <td><%= member.phoneNumber %></td>
+                  <td><%= member.communityName %></td>
+                  <td><%= member.required %></td>
+                </tr>          
+        
+            <% }) %>
+        </tbody>
+      </table>
+    
+</body>
+</html>
